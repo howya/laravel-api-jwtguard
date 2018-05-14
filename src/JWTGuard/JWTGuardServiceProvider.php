@@ -1,6 +1,6 @@
 <?php
 
-namespace App\JWTGuard;
+namespace RBennett\JWTGuard;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Auth;
