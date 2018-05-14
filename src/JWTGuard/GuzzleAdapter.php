@@ -1,6 +1,6 @@
 <?php
 
-namespace App\JWTGuard;
+namespace RBennett\JWTGuard;
 
 use RBennett\JWTGuard\Contracts\HTTPRequestContract;
 
