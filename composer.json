@@ -1,0 +1,37 @@
+{
+    "name": "rbennett/laravel-api-jwtguard",
+    "description": "A simple JWTGuard guard that checks for a Passport OAuth2 bearer token on incoming API requests and validates token signature / expiry. Provides jwtscopes middleware to validate bearer token scopes.",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Rob Bennett",
+            "email": "rjben@hotmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "firebase/php-jwt": "^5.0",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RBennett\\JWTGuard\\": "src/JWTGuard/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.6"
+    },
+    "scripts": {
+        "test": [
+            "vendor/bin/phpunit"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "RBennett\\JWTGuard\\JWTGuardServiceProvider"
+            ]
+        }
+    }
+}
+
